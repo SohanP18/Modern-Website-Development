@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    perspective: 500px;
+    overflow: hidden;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s ;
+    background-color: rgb(255, 196, 0);
+}
+
+.background i{
+    cursor: pointer;
+}
+
+#nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.ri-menu-2-line{
+    font-size: 32px;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.heading h1{
+    font-weight: 800;
+    color: rgb(0, 76, 190);
+    font-size: 66px;
+}
+
+.heading p{
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    padding: 0 110px;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.projects .proj{
+    width: 25%;
+    align-items: center;
+    height: 460px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 14px #2c2c2c79;
+}
+
+.proj .pic{
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.proj p{
+    font-family: 'Photoshoot';
+    font-size: 34px;
+    text-align: center;
+    margin: 40px 10px;
+}
+
+.pic img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+#sidenav{
+    width: 320px;
+    height: 80%;
+    top: 50%;
+    left: -14%;
+    transform: translate(0, -50%);
+    position: absolute;
+    padding-top: 80px;
+    transition: all ease-in-out 1s ;
+    display: flex;
+}
+
+#sidenav a{
+    display: block;
+    margin: 25px 15px;
+    text-decoration: none;
+    color: rgba(0, 102, 255, 0.788);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#sidenav a:hover{
+    color: rgb(0, 76, 190);;
+}
+
+#sidenav i{
+    margin: 26px 10px;
+}
+
+.ri-close-circle-line{
+    font-size: 32px;
+    cursor: pointer;
+}
